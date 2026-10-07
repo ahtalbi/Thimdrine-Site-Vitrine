@@ -1,0 +1,32 @@
+.trust {
+    background-color: var(--couleur-avoine);
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.containertrustedcompanies {
+    overflow: hidden;
+    width: 80%;
+}
+
+.trustedcompanies {
+    display: flex;
+    align-items: center;
+    width: max-content;
+    animation: slideinout 10s infinite linear;
+}
+
+.trustedcompanies img {
+    height: 80px;
+    margin-left: 100px;
+    object-fit: contain;
+}
+
+@keyframes slideinout {
+    to {
+      transform: translateX(-50%);
+    }
+}
