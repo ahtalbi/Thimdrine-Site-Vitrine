@@ -1,3 +1,19 @@
+@font-face {
+  font-family: 'Cormorant Garamond';
+  src: url('../assets/fonts/Cormorant_Garamond/CormorantGaramond-VariableFont_wght.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../assets/fonts/Inter/Inter-VariableFont_opsz\,wght.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
     --couleur-laine: #F6F2EB;
     --couleur-lie-de-vin: #6B2A28;
@@ -7,10 +23,91 @@
     --couleur-taupe: #7A6F63;
     --couleur-filet: #D9D0C2;
     --couleur-avoine: #EDE6DA;
+    --font-clean: 'Cormorant Garamond', serif;
+    --font-normal: 'Inter', sans-serif;
 }
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+h1, h2, h3 {
+    color: var(--couleur-nuit);
+    font-family: var(--font-clean);
+}
+
+a {
+    color: var(--couleur-nuit);
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+a:hover {
+    color: var(--couleur-lie-de-vin);
+}
+
+.button-filled {
+    background: var(--couleur-lie-de-vin);
+    color: var(--couleur-laine);
+    font-family: var(--font-clean);
+    font-weight: 100;
+    text-transform: uppercase;
+    border: none;
+    letter-spacing: 2.5px;
+    border: 1px solid var(--couleur-lie-de-vin);
+    transition: all 0.2s linear;
+}
+
+.button-filled:hover {
+    background: transparent;
+    color: var(--couleur-lie-de-vin);
+    font-weight: 800;
+    border: 1px var(--couleur-lie-de-vin) solid;
+    cursor: pointer;
+}
+
+.button-non-filled {
+    background: transparent;
+    color: var(--couleur-lie-de-vin);
+    font-family: var(--font-clean);
+    font-weight: 100;
+    text-transform: uppercase;
+    border: none;
+    font-weight: 800;
+    border: 1px var(--couleur-lie-de-vin) solid;
+    letter-spacing: 2.5px;
+    transition: all 0.2s linear;
+}
+
+.button-non-filled:hover {
+    background: var(--couleur-lie-de-vin);
+    color: var(--couleur-laine);
+    font-weight: 100;
+    cursor: pointer;
+}
+
+.button-a {
+    background-color: transparent;
+    text-decoration: underline;
+    color: var(--couleur-lie-de-vin);
+    font-family: var(--font-clean);
+    font-weight: 100;
+    text-transform: uppercase;
+    border: none;
+    font-weight: 800;
+    letter-spacing: 2.5px;
+    border: 1px transparent solid;
+    transition: all 0.2s linear;
+}
+
+.button-a::after {
+    content: " →";
+}
+
+.button-a:hover {
+    cursor: pointer;
+    letter-spacing: 1px;
+    border: 1px var(--couleur-lie-de-vin) solid;
 }

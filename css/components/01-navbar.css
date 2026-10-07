@@ -1,0 +1,41 @@
+header {
+    background: var(--couleur-laine);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 3%;
+    height: 40px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header h2 {
+    letter-spacing: 1.5px;
+    transition: all 0.2s ease;
+}
+
+header h2:hover {
+    color: var(--couleur-lie-de-vin);
+    text-decoration: underline;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+}
+
+header .links {
+    display: flex;
+    align-items: center;
+    width: 300px;
+    justify-content: space-between;
+}
+
+header .links .link:hover {
+    color: var(--couleur-lie-de-vin);
+    text-decoration: underline;
+}
+
+header .links .focused {
+    color: var(--couleur-lie-de-vin);
+    text-decoration: underline;
+}
