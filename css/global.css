@@ -1,0 +1,16 @@
+:root {
+    --couleur-laine: #F6F2EB;
+    --couleur-lie-de-vin: #6B2A28;
+    --couleur-sauge: #8A9A7B;
+    --couleur-terracotta: #B5603E;
+    --couleur-nuit: #1F1B17;
+    --couleur-taupe: #7A6F63;
+    --couleur-filet: #D9D0C2;
+    --couleur-avoine: #EDE6DA;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
