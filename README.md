@@ -1,64 +1,64 @@
-# Thimdrine Website
+# Site vitrine Thimdrine
 
-A responsive showcase website for Thimdrine, presenting the cooperative, its products, and ways to get in touch.
+Un site vitrine adaptatif qui présente la coopérative Thimdrine, ses produits et les moyens de la contacter.
 
-> **Live preview:** Not available yet.
+> **Aperçu en ligne :** pas encore disponible.
 
 ## Pages
 
-- **Home** — introduction, partners, and featured products
-- **About** — the cooperative and its work
-- **Products** — the product catalog
-- **Contact** — a contact form with client-side field validation
+- **Accueil** — présentation, partenaires et produits mis en avant
+- **À propos** — la coopérative et son savoir-faire
+- **Produits** — le catalogue des produits
+- **Contact** — un formulaire avec validation des champs dans le navigateur
 
-The contact form currently validates entries in the browser. It needs a receiving service or backend before it can deliver messages.
+Le formulaire vérifie les informations saisies dans le navigateur. Il devra être relié à un service de réception ou à un serveur pour pouvoir envoyer les messages.
 
-## Project planning with Scrum
+## Organisation du projet avec Scrum
 
-I used a GitHub Projects board to organize the work into tasks, track progress, and make the development process easier to follow. The board shows how the project was planned and how the work was split into manageable pieces.
+J’ai utilisé un tableau GitHub Projects pour organiser les tâches, suivre leur avancement et rendre le processus de développement plus clair. Le tableau montre comment le projet a été planifié et découpé en étapes réalisables.
 
-[View the Thimdrine project board](https://github.com/users/ahtalbi/projects/4)
+[Consulter le tableau de projet Thimdrine](https://github.com/users/ahtalbi/projects/4)
 
 ## Design
 
-I started by creating a design in Figma, then shaped the visual direction around a warm, premium feel inspired by other websites.
+J’ai commencé par créer une maquette dans Figma, puis j’ai défini une direction visuelle chaleureuse et soignée, inspirée d’autres sites.
 
-### Figma
+### Maquette Figma
 
-[Open the Thimdrine design in Figma](https://www.figma.com/design/ceqEvMBfV7Ouoq3zpwS8A0/Untitled--Copy---Copy-?node-id=6-6&t=8seS7PdvLUJGfoEw-1)
+[Ouvrir le design Thimdrine dans Figma](https://www.figma.com/design/ceqEvMBfV7Ouoq3zpwS8A0/Untitled--Copy---Copy-?node-id=6-6&t=8seS7PdvLUJGfoEw-1)
 
-### Visual theme
+### Univers visuel
 
-![Thimdrine visual theme](./assets/readme_assets/theme.png)
+![Univers visuel de Thimdrine](./assets/readme_assets/theme.png)
 
-### Colors
+### Couleurs
 
-The palette was chosen after looking at other websites and design references. It uses warm neutrals with wine, sage, and terracotta accents.
+La palette a été choisie après l’étude d’autres sites et de références visuelles. Elle associe des tons neutres et chaleureux à des accents lie-de-vin, sauge et terracotta.
 
-### Fonts
+### Polices
 
-The typography takes inspiration from the design references. The fonts were downloaded from [Google Fonts](https://fonts.google.com/).
+La typographie s’inspire des références visuelles. Les polices ont été téléchargées depuis [Google Fonts](https://fonts.google.com/).
 
-## Built with
+## Technologies utilisées
 
 - HTML
 - CSS
-- JavaScript for contact form validation
+- JavaScript pour valider le formulaire de contact
 
-## Layout and HTML structure
+## Mise en page et structure HTML
 
 ### Flexbox
 
-Flexbox is a CSS layout tool for arranging items in a row or a column. It helps align and space elements, and makes it easier for a layout to adapt to different screen sizes. For example, this site uses flex layouts for navigation and to place content beside each other; media queries can stack that content on smaller screens.
+Flexbox est un outil CSS qui permet de disposer des éléments sur une ligne ou dans une colonne. Il facilite leur alignement et la gestion de l’espace, et aide la mise en page à s’adapter aux différentes tailles d’écran. Le site l’utilise notamment pour aligner des éléments et placer des blocs côte à côte. Les règles adaptées aux petits écrans peuvent ensuite les empiler.
 
-Common Flexbox properties include `display: flex`, `flex-direction`, `justify-content`, `align-items`, and `gap`.
+Parmi les propriétés Flexbox courantes : `display: flex`, `flex-direction`, `justify-content`, `align-items` et `gap`.
 
-### Semantic HTML
+### Les balises HTML sémantiques
 
-Semantic HTML tags describe the purpose of the content they contain. For example, `<header>` represents introductory content, `<nav>` contains navigation links, `<main>` holds the page’s main content, `<section>` groups related content, `<article>` represents a standalone item, and `<footer>` contains closing or site information.
+Les balises sémantiques décrivent le rôle du contenu qu’elles encadrent. Par exemple, `<header>` désigne l’en-tête, `<nav>` regroupe les liens de navigation, `<main>` contient le contenu principal, `<section>` rassemble des éléments liés, `<article>` représente un contenu autonome et `<footer>` contient les informations de pied de page.
 
-Using the right semantic tags makes pages easier to understand and maintain. It also helps browsers, search engines, and assistive technologies interpret the page structure. Use a regular `<div>` when no specific semantic meaning applies.
+Choisir des balises adaptées rend la structure plus facile à comprendre et à maintenir. Cela aide aussi les navigateurs, les moteurs de recherche et les technologies d’assistance à interpréter la page. On peut utiliser une balise `<div>` lorsqu’aucune balise sémantique ne correspond au rôle du bloc.
 
-## UI and UX
+## Expérience utilisateur
 
-The goal is to make the site feel polished and easy to explore, with clear navigation, responsive layouts, and product imagery that supports the cooperative’s story.
+L’objectif est de proposer un site soigné et simple à parcourir, avec une navigation claire, une mise en page adaptative et des images de produits qui racontent l’histoire de la coopérative.
