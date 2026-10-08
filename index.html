@@ -9,6 +9,7 @@
 
     <!-- shared css -->
     <link rel="stylesheet" href="./css/components/01-navbar.css">
+    <link rel="stylesheet" href="./css/components/02-footer.css">
     
     <!-- links css -->
     <link rel="stylesheet" href="./css/accueil/01-hero.css">
@@ -33,7 +34,7 @@
             <div class="title">
                 <h2>On ne fabrique pas pour accumuler, on crée pour vous toucher.</h2>
                 <h3>Goûter notre terroir, c'est ne plus jamais s'en passer.</h3>
-                <button class="button-filled button-decouvrer">Découvrir nos produits</button>
+                <a href="/products"><button class="button-filled button-decouvrer">Découvrir nos produits</button></a>
             </div>
         </section>
         <section class="trust">
@@ -64,9 +65,10 @@
             </div>
             <div class="container-right">
                 <h3>Plus de 25 femmes passionnées façonnent nos créations. En créant de leurs propres mains et avec le cœur, elles soutiennent directement leurs familles tout en perpétuant un savoir-faire unique.</h3>
-                <button class="button-a button-plus-de-detail">Plus de detail </button>
+                <a href="/about"><button class="button-a button-plus-de-detail">Plus de detail</button></a>
             </div>
         </section>
+        <hr>
         <section class="products">
             <div class="products-container">
                 <div class="header">
@@ -75,7 +77,27 @@
                 </div>
                 <div class="best-sellers">
                     <article class="product product-1">
-                        <img src="" alt="">
+                        <img src="./assets/acceuil/products/olive.png" alt="">
+                        <div class="product-details">
+                            <div class="container-title">
+                                <h3 class="title">olive oil</h3>
+                                <h3 class="price">8.0 €</h3>
+                            </div>
+                            <h3 class="description"> La fraîcheur du verger pressée dans chaque goutte.</h3>
+                        </div>
+                    </article>
+                    <article class="product product-1">
+                        <img src="./assets/acceuil/products/olive.png" alt="">
+                        <div class="product-details">
+                            <div class="container-title">
+                                <h3 class="title">olive oil</h3>
+                                <h3 class="price">8.0 €</h3>
+                            </div>
+                            <h3 class="description"> La fraîcheur du verger pressée dans chaque goutte.</h3>
+                        </div>
+                    </article>
+                    <article class="product product-1">
+                        <img src="./assets/acceuil/products/olive.png" alt="">
                         <div class="product-details">
                             <div class="container-title">
                                 <h3 class="title">olive oil</h3>
@@ -87,8 +109,32 @@
                 </div>
             </div>
         </section>
-        <section class="contact"></section>
+        <hr>
+        <section class="contact">
+            <div class="left-title">
+                <h1>Contact</h1>
+                <h3>Vous attendez quoi ? contacter nous :)</h3>
+            </div>
+            <a href="/contact"><button class="button-non-filled button-contact">Contacter nous →</button></a>
+        </section>
     </main>
-    <footer></footer>
+    <footer>
+        <div class="footer-container">
+            <div class="title-conainer">
+                <h1 class="logo">Thimdrine</h1>
+                <div class="links">
+                    <a class="link focused" href="/">Accueil</a>
+                    <a class="link" href="/products">Nos produits</a>
+                    <a class="link" href="/about">A propos</a>
+                    <a class="link" href="/contact">Contact</a>
+                </div>
+            </div>
+            <div class="hr"><hr></div>
+            <div class="copywrite">
+                <h4>© Thimdrine copywrite 2026</h4>
+                <h4>Made with ❤️ by <a href="https://github.com/ahtalbi">Ahmed Talbi</a></h4>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
