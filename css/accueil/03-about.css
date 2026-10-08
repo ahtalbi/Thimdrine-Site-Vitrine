@@ -24,13 +24,15 @@
     display: flex;
     flex-direction: column;    
 }
-.about .container-right h3 {
+.about .container-right h2 {
     font-family: var(--font-normal);
     font-weight: 100;
     text-transform: uppercase;
 }
 
 .about .container-right .button-plus-de-detail {
+    display: inline-flex;
+    align-items: center;
     width: 200px;
     height: 50px;
     text-align: start;

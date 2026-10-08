@@ -8,6 +8,9 @@
 }
 
 .contact .button-contact {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     min-width: 50px;
     width: 300px;
     height: 60px;

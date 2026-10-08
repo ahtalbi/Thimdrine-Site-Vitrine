@@ -37,3 +37,8 @@ footer .footer-container .title-conainer .links {
     display: flex;
     gap: 24px;
 }
+
+footer .footer-container .logo {
+    color: var(--couleur-nuit);
+    font: 700 2em var(--font-clean);
+}

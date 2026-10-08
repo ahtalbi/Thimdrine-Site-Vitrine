@@ -19,7 +19,7 @@
     flex-direction: column;
 }
 
-.contact .left-container h1,
+.contact .left-container h2,
 .contact .right-container h1 {
     font-size: 4vw;
     margin-bottom: 2rem;
