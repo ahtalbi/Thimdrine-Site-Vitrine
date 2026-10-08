@@ -43,7 +43,6 @@ La typographie s’inspire des références visuelles. Les polices ont été té
 
 - HTML
 - CSS
-- JavaScript pour valider le formulaire de contact
 
 ## Mise en page et structure HTML
 

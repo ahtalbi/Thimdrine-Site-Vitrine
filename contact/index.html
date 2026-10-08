@@ -31,39 +31,33 @@
                 <h1>Contacter nous</h1>
                 <img src="../assets/contact/contact.webp" alt="">
             </div>
-            <form class="right-container" id="contact-form" novalidate>
+            <form class="right-container">
                 <h1>Nous écrire</h1>
                 <div class="form-fields">
                     <div class="field-row">
                         <div class="field">
                             <label for="nom">Nom</label>
-                            <input id="nom" name="nom" type="text" placeholder="Votre nom" autocomplete="family-name" required minlength="2" maxlength="60" pattern="[A-Za-zÀ-ÖØ-öø-ÿŒœ'’-]+(?:[ ][A-Za-zÀ-ÖØ-öø-ÿŒœ'’-]+)*" title="2 à 60 caractères : lettres, espaces, apostrophes ou traits d’union." aria-describedby="nom-error">
-                            <small class="field-error" id="nom-error"></small>
+                            <input id="nom" name="nom" type="text" placeholder="Votre nom" autocomplete="family-name" required minlength="2" maxlength="60" pattern="\p{L}+(?:(?: |'|’|-)\p{L}+)*" title="2 à 60 caractères : lettres, espaces, apostrophes ou traits d’union.">
                         </div>
                         <div class="field">
                             <label for="prenom">Prénom</label>
-                            <input id="prenom" name="prenom" type="text" placeholder="Votre prénom" autocomplete="given-name" required minlength="2" maxlength="60" pattern="[A-Za-zÀ-ÖØ-öø-ÿŒœ'’-]+(?:[ ][A-Za-zÀ-ÖØ-öø-ÿŒœ'’-]+)*" title="2 à 60 caractères : lettres, espaces, apostrophes ou traits d’union." aria-describedby="prenom-error">
-                            <small class="field-error" id="prenom-error"></small>
+                            <input id="prenom" name="prenom" type="text" placeholder="Votre prénom" autocomplete="given-name" required minlength="2" maxlength="60" pattern="\p{L}+(?:(?: |'|’|-)\p{L}+)*" title="2 à 60 caractères : lettres, espaces, apostrophes ou traits d’union.">
                         </div>
                     </div>
                     <div class="field">
                         <label for="email">E-mail</label>
-                        <input id="email" name="email" type="email" placeholder="Votre adresse e-mail" autocomplete="email" required maxlength="254" pattern="[^\s@]+@[^\s@]+\.[^\s@]{2,}" title="Saisissez une adresse e-mail valide." aria-describedby="email-error">
-                        <small class="field-error" id="email-error"></small>
+                        <input id="email" name="email" type="email" placeholder="Votre adresse e-mail" autocomplete="email" required maxlength="254" pattern="[^\s@]+@[^\s@]+\.[^\s@]{2,}" title="Saisissez une adresse e-mail valide.">
                     </div>
                     <div class="field">
                         <label for="objet">Objet</label>
-                        <input id="objet" name="objet" type="text" placeholder="Objet de votre message" required minlength="3" maxlength="100" pattern="[A-Za-zÀ-ÖØ-öø-ÿŒœ0-9][A-Za-zÀ-ÖØ-öø-ÿŒœ0-9 ,.'’!?()&amp;:/_+-]*" title="3 à 100 caractères. Utilisez des lettres, chiffres et une ponctuation simple." aria-describedby="objet-error">
-                        <small class="field-error" id="objet-error"></small>
+                        <input id="objet" name="objet" type="text" placeholder="Objet de votre message" required minlength="3" maxlength="100" pattern="(?:\p{L}|\p{N})(?:(?:\p{L}|\p{N})| |,|\.|'|’|!|\?|\(|\)|&amp;|:|/|_|\+|-|°)*" title="3 à 100 caractères. Utilisez des lettres, chiffres et une ponctuation simple.">
                     </div>
                     <div class="field">
                         <label for="message">Message</label>
-                        <textarea id="message" name="message" placeholder="Votre message" required minlength="10" maxlength="2000" aria-describedby="message-error"></textarea>
-                        <small class="field-error" id="message-error"></small>
+                        <textarea id="message" name="message" placeholder="Votre message" required minlength="10" maxlength="2000" pattern="(?=.*[\p{L}\p{N}])[\s\S]*" title="Ajoutez au moins une lettre ou un chiffre à votre message."></textarea>
                     </div>
                 </div>
                 <button class="submit-button" type="submit">Envoyer le message</button>
-                <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
             </form>
         </section>
     </main>
@@ -85,6 +79,5 @@
             </div>
         </div>
     </footer>
-    <script src="../js/contact-form.js" defer></script>
 </body>
 </html>
