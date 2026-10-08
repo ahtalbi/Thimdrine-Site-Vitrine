@@ -29,7 +29,7 @@ J’ai commencé par créer une maquette dans Figma, puis j’ai défini une dir
 
 ### Univers visuel
 
-![Univers visuel de Thimdrine](./assets/readme_assets/theme.png)
+![Univers visuel de Thimdrine](./assets/readme_assets/theme.webp)
 
 ### Couleurs
 
