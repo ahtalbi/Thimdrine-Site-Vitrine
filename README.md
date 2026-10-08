@@ -1,6 +1,6 @@
 # Site vitrine Thimdrine
 
-Un site vitrine adaptatif qui présente la coopérative Thimdrine, ses produits et les moyens de la contacter.
+Un site [Thimdrine](https://thimdrine.vercel.app) vitrine adaptatif qui présente la coopérative Thimdrine, ses produits et les moyens de la contacter.
 
 > **Aperçu en ligne :** pas encore disponible.
 
@@ -26,6 +26,9 @@ J’ai commencé par créer une maquette dans Figma, puis j’ai défini une dir
 ### Maquette Figma
 
 [Ouvrir le design Thimdrine dans Figma](https://www.figma.com/design/ceqEvMBfV7Ouoq3zpwS8A0/Untitled--Copy---Copy-?node-id=6-6&t=8seS7PdvLUJGfoEw-1)
+
+### Performance de lighthouse
+![status light house](./assets/readme_assets/lighthouse.webp)
 
 ### Univers visuel
 
