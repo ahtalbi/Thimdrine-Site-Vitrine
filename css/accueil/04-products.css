@@ -1,0 +1,8 @@
+.products {
+    background-color: var(--couleur-laine);
+    height: 100vh;
+    padding: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

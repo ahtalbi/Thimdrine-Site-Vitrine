@@ -1,7 +1,7 @@
 .hero {
     margin-top: -40px;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.3); 
+    background-color: rgba(0, 0, 0, 0.5); 
     background-image: url("../../assets/acceuil/bg_hero.jpg");
     background-position: center;
     background-size: cover;
