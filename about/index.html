@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +10,7 @@
 
     <!-- shared css -->
     <link rel="stylesheet" href="../css/components/01-navbar.css">
+    <link rel="stylesheet" href="../css/about/about.css">
     
     <!-- links css -->
 </head>
@@ -24,16 +25,32 @@
         </div>
     </header>
     <main>
-        <h2>About</h2>
+        <div class="about-page">
+            <section class="about-section">
+                <div class="about-copy">
+                    <h1>Notre coopérative</h1>
+                    <p>Depuis 1988, Thimdrine fait vivre les saveurs de notre terroir et le savoir-faire de femmes passionnées. Aujourd’hui, plus de 25 femmes contribuent à cette aventure collective et soutiennent leurs familles grâce à leur travail.</p>
+                </div>
+                <img class="about-image" src="../assets/about/1image.png" alt="Les femmes de la coopérative Thimdrine">
+            </section>
+
+            <section class="about-section about-section-reverse">
+                <img class="about-image" src="../assets/about/2image.png" alt="Le travail artisanal réalisé à la coopérative">
+                <div class="about-copy">
+                    <h2>Nos valeurs</h2>
+                    <p>Nous croyons au travail fait main, à la transmission des savoir-faire et à la solidarité. Chaque création reflète le soin apporté à nos produits et le lien qui nous unit à notre région.</p>
+                </div>
+            </section>
+        </div>
     </main>
     <footer>
         <div class="footer-container">
             <div class="title-conainer">
                 <h1 class="logo">Thimdrine</h1>
                 <div class="links">
-                    <a class="link focused" href="/">Accueil</a>
+                    <a class="link" href="/">Accueil</a>
                     <a class="link" href="/products">Nos produits</a>
-                    <a class="link" href="/about">A propos</a>
+                    <a class="link focused" href="/about">A propos</a>
                     <a class="link" href="/contact">Contact</a>
                 </div>
             </div>
