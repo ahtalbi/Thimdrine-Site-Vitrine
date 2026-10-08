@@ -8,6 +8,7 @@
 }
 
 .contact .button-contact {
+    min-width: 50px;
     width: 300px;
     height: 60px;
 }

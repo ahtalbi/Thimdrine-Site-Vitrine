@@ -37,14 +37,3 @@
     height: 390px;
     object-fit: cover;
 }
-
-@media (max-width: 700px) {
-    .about-page { padding: 32px 6%; }
-    .about-section,
-    .about-section.about-section-reverse {
-        grid-template-columns: 1fr;
-        gap: 24px;
-        padding: 28px 0 36px;
-    }
-    .about-image { height: 300px; }
-}

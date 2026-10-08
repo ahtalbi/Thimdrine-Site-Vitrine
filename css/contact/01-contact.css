@@ -1,0 +1,121 @@
+.contact {
+    background-color: var(--couleur-laine);
+    min-height: calc(100vh - 90px);
+    padding: clamp(2rem, 5vw, 5rem);
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    gap: clamp(2rem, 5vw, 5rem);
+}
+
+.contact .left-container,
+.contact .right-container {
+    width: 50%;
+    min-width: 0;
+}
+
+.contact .left-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact .left-container h1,
+.contact .right-container h1 {
+    font-size: 4vw;
+    margin-bottom: 2rem;
+}
+
+.contact .left-container img {
+    min-height: 32rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.right-container .form-fields {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.right-container .field-row {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+}
+
+.right-container .field {
+    display: flex;
+    flex-direction: column;
+    gap: .55rem;
+}
+
+.right-container label {
+    color: var(--couleur-nuit);
+    font: 600 1rem/1.4 var(--font-normal);
+}
+
+.right-container input,
+.right-container textarea {
+    width: 100%;
+    border: 1px solid var(--couleur-taupe);
+    border-radius: 3px;
+    background: transparent;
+    color: var(--couleur-nuit);
+    font: 400 1rem/1.5 var(--font-normal);
+    padding: .9rem 1rem;
+    outline: none;
+    transition: border-color .2s ease, box-shadow .2s ease;
+}
+
+.right-container input {
+    min-height: 3.5rem;
+}
+
+.right-container textarea {
+    min-height: 11rem;
+    resize: vertical;
+}
+
+.right-container input::placeholder,
+.right-container textarea::placeholder {
+    color: var(--couleur-taupe);
+    opacity: .85;
+}
+
+.right-container input:focus,
+.right-container textarea:focus {
+    border-color: var(--couleur-lie-de-vin);
+    box-shadow: 0 0 0 3px rgb(107 42 40 / 12%);
+}
+
+.right-container [aria-invalid="true"] {
+    border-color: var(--couleur-lie-de-vin);
+}
+
+.field-error {
+    min-height: 1em;
+    color: var(--couleur-lie-de-vin);
+    font: 400 .8rem/1.4 var(--font-normal);
+}
+
+.submit-button {
+    margin-top: 1.5rem;
+    padding: .9rem 1.5rem;
+    border: 1px solid var(--couleur-lie-de-vin);
+    border-radius: 2px;
+    background: var(--couleur-lie-de-vin);
+    color: var(--couleur-laine);
+    font: 600 1rem/1.4 var(--font-normal);
+    cursor: pointer;
+    transition: background .2s ease, color .2s ease;
+}
+
+.submit-button:hover {
+    background: transparent;
+    color: var(--couleur-lie-de-vin);
+}
+
+.form-status {
+    margin-top: .75rem;
+    color: var(--couleur-lie-de-vin);
+    font: 400 .9rem/1.5 var(--font-normal);
+}

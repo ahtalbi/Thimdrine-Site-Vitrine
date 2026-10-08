@@ -1,17 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../assets/logo.png">
     <title>Thimdrine Coperative Depuis 1988.</title>
     <!-- global css-->
     <link rel="stylesheet" href="../css/global.css">
-    <link rel="stylesheet" href="../css/components/02-footer.css">
 
     <!-- shared css -->
     <link rel="stylesheet" href="../css/components/01-navbar.css">
+    <link rel="stylesheet" href="../css/components/02-footer.css">
     
     <!-- links css -->
+    <link rel="stylesheet" href="../css/contact/01-contact.css">
 </head>
 <body>
     <header>
@@ -24,7 +26,46 @@
         </div>
     </header>
     <main>
-        <h2>Contact</h2>
+        <section class="contact">
+            <div class="left-container">
+                <h1>Contacter nous</h1>
+                <img src="../assets/contact/contact.jpg" alt="">
+            </div>
+            <form class="right-container" id="contact-form" novalidate>
+                <h1>Nous écrire</h1>
+                <div class="form-fields">
+                    <div class="field-row">
+                        <div class="field">
+                            <label for="nom">Nom</label>
+                            <input id="nom" name="nom" type="text" placeholder="Votre nom" autocomplete="family-name" required minlength="2" maxlength="60" pattern="[A-Za-zÀ-ÖØ-öø-ÿŒœ'’-]+(?:[ ][A-Za-zÀ-ÖØ-öø-ÿŒœ'’-]+)*" title="2 à 60 caractères : lettres, espaces, apostrophes ou traits d’union." aria-describedby="nom-error">
+                            <small class="field-error" id="nom-error"></small>
+                        </div>
+                        <div class="field">
+                            <label for="prenom">Prénom</label>
+                            <input id="prenom" name="prenom" type="text" placeholder="Votre prénom" autocomplete="given-name" required minlength="2" maxlength="60" pattern="[A-Za-zÀ-ÖØ-öø-ÿŒœ'’-]+(?:[ ][A-Za-zÀ-ÖØ-öø-ÿŒœ'’-]+)*" title="2 à 60 caractères : lettres, espaces, apostrophes ou traits d’union." aria-describedby="prenom-error">
+                            <small class="field-error" id="prenom-error"></small>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label for="email">E-mail</label>
+                        <input id="email" name="email" type="email" placeholder="Votre adresse e-mail" autocomplete="email" required maxlength="254" pattern="[^\s@]+@[^\s@]+\.[^\s@]{2,}" title="Saisissez une adresse e-mail valide." aria-describedby="email-error">
+                        <small class="field-error" id="email-error"></small>
+                    </div>
+                    <div class="field">
+                        <label for="objet">Objet</label>
+                        <input id="objet" name="objet" type="text" placeholder="Objet de votre message" required minlength="3" maxlength="100" pattern="[A-Za-zÀ-ÖØ-öø-ÿŒœ0-9][A-Za-zÀ-ÖØ-öø-ÿŒœ0-9 ,.'’!?()&amp;:/_+-]*" title="3 à 100 caractères. Utilisez des lettres, chiffres et une ponctuation simple." aria-describedby="objet-error">
+                        <small class="field-error" id="objet-error"></small>
+                    </div>
+                    <div class="field">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Votre message" required minlength="10" maxlength="2000" aria-describedby="message-error"></textarea>
+                        <small class="field-error" id="message-error"></small>
+                    </div>
+                </div>
+                <button class="submit-button" type="submit">Envoyer le message</button>
+                <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+            </form>
+        </section>
     </main>
     <footer>
         <div class="footer-container">
@@ -44,5 +85,6 @@
             </div>
         </div>
     </footer>
+    <script src="../js/contact-form.js" defer></script>
 </body>
 </html>
