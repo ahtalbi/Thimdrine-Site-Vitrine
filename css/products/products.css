@@ -1,13 +1,15 @@
-.catalogue { background: var(--couleur-laine); }
+.catalogue { 
+    background: var(--couleur-laine); 
+}
 
 .catalogue-heading {
-    padding: 76px 10% 20px;
+    padding: 76px 10%;
     max-width: 1100px;
 }
 
 .catalogue-heading .eyebrow {
     color: var(--couleur-terracotta);
-    font: 600 .78rem/1.4 var(--font-normal);
+    font: 600 .70rem var(--font-normal);
     letter-spacing: .12em;
     text-transform: uppercase;
     margin-bottom: 12px;
@@ -21,13 +23,19 @@
 .catalogue-heading > p:last-child {
     max-width: 620px;
     color: var(--couleur-taupe);
-    font: 400 1rem/1.7 var(--font-normal);
+    font: 400 1rem var(--font-normal);
 }
 
-.catalogue-products { height: auto; padding-top: 40px; }
-.catalogue-products .products-container { max-width: 1240px; }
-.catalogue-count { color: var(--couleur-taupe); font: 400 .9rem var(--font-normal); }
+.catalogue-products { 
+    height: auto; 
+    padding-top: 40px; 
+}
 
-@media (max-width: 760px) {
-    .catalogue-heading { padding: 54px 6% 12px; }
+.catalogue-products .products-container { 
+    max-width: 1240px; 
+}
+
+.catalogue-count { 
+    color: var(--couleur-taupe); 
+    font: 400 .9rem var(--font-normal); 
 }

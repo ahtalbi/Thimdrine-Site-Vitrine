@@ -27,7 +27,7 @@
 }
 
 .products .products-container .header h2 { 
-    font-size: clamp(2rem, 4vw, 3rem); 
+    font-size: 4vw; 
 }
 
 .products .products-container .header a {
@@ -77,5 +77,5 @@
 
 .product .description { 
     color: var(--couleur-taupe); 
-    font: 400 .9rem/1.55 var(--font-normal);
+    font: 400 .6rem var(--font-normal);
 }

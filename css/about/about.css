@@ -28,7 +28,7 @@
 .about-copy p {
     max-width: 520px;
     color: var(--couleur-taupe);
-    font: 400 1rem/1.8 var(--font-normal);
+    font: 400 0.8rem var(--font-normal);
 }
 
 .about-image {

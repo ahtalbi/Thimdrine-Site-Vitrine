@@ -1,11 +1,11 @@
 .contact {
     background-color: var(--couleur-laine);
-    min-height: calc(100vh - 90px);
-    padding: clamp(2rem, 5vw, 5rem);
+    min-height: 100vh;
+    padding: 5vw;
     display: flex;
     align-items: stretch;
     justify-content: center;
-    gap: clamp(2rem, 5vw, 5rem);
+    gap: 5vw;
 }
 
 .contact .left-container,
@@ -50,7 +50,7 @@
 
 .right-container label {
     color: var(--couleur-nuit);
-    font: 600 1rem/1.4 var(--font-normal);
+    font: 600 0.9rem var(--font-normal);
 }
 
 .right-container input,
@@ -60,10 +60,10 @@
     border-radius: 3px;
     background: transparent;
     color: var(--couleur-nuit);
-    font: 400 1rem/1.5 var(--font-normal);
+    font: 400 0.8rem var(--font-normal);
     padding: .9rem 1rem;
     outline: none;
-    transition: border-color .2s ease, box-shadow .2s ease;
+    transition: all 0.2s ease;
 }
 
 .right-container input {
@@ -84,7 +84,7 @@
 .right-container input:focus,
 .right-container textarea:focus {
     border-color: var(--couleur-lie-de-vin);
-    box-shadow: 0 0 0 3px rgb(107 42 40 / 12%);
+    box-shadow: 0 0 0 3px #5523211f;
 }
 
 .right-container [aria-invalid="true"] {
@@ -94,7 +94,7 @@
 .field-error {
     min-height: 1em;
     color: var(--couleur-lie-de-vin);
-    font: 400 .8rem/1.4 var(--font-normal);
+    font: 400 .6rem var(--font-normal);
 }
 
 .submit-button {
@@ -104,9 +104,9 @@
     border-radius: 2px;
     background: var(--couleur-lie-de-vin);
     color: var(--couleur-laine);
-    font: 600 1rem/1.4 var(--font-normal);
+    font: 600 0.8rem var(--font-normal);
     cursor: pointer;
-    transition: background .2s ease, color .2s ease;
+    transition: all .2s ease;
 }
 
 .submit-button:hover {
@@ -117,5 +117,5 @@
 .form-status {
     margin-top: .75rem;
     color: var(--couleur-lie-de-vin);
-    font: 400 .9rem/1.5 var(--font-normal);
+    font: 400 .7rem var(--font-normal);
 }
